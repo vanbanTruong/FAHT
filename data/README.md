@@ -6,4 +6,4 @@ The original data can be download from:
 2. Census: https://archive.ics.uci.edu/ml/datasets/Census-Income+%28KDD%29
 
 
-We render them as discriminateddata streams by randomizing the order of the instances andprocessing them in sequence.
+We render them as discriminateddata streams by randomizing the order of the instances and processing them in sequence.
