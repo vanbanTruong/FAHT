@@ -24,25 +24,15 @@ public class InstanceStreamClassifier {
 	private static String saName = "sex"; // sensitive attribute name
 	private static String saValue = "Female"; // sensitive attribute value
 	private static int saIndex; // sensitive attribute index of the stream
-	// private static String className= "class"; //class name
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-
-		// Import data
-		//String inputFileName = "adult.data.csv";
-//		String inputFileName = "censusSmall.csv";
-//		CSVLoader loader = new CSVLoader();
-//		loader.setSource(new File("./data/" + inputFileName));
-//		loader.setNoHeaderRowPresent(false);
-//		Instances stream = loader.getDataSet();
 		
-		//import arff data
+		//import data
 		String arffInputFileName= "test.arff";
 		ArffReader arffReader= new ArffReader(new FileReader("./data/"+ arffInputFileName));
 		Instances stream = arffReader.getData();
 		
-		/** stream= stream.stream() */
 		stream.setClassIndex(stream.numAttributes() - 1);
 		System.out.println("load data successfully!");
 
@@ -156,7 +146,6 @@ public class InstanceStreamClassifier {
 		}
 
 		System.out.println("undeprivedCount:" + numUndeprived + ", deprivedCount:" + numDeprived);
-		//System.out.println(numUndeprived + numDeprived);
 		System.out.println("deprivedPredictedCount:"+ deprivedPredictedCount+", undeprivedPredictedCount:"+undeprivedPredictedCount);
 
 		double accuracy = 100 * (double) numCorrectClassified / numOfInstances;
