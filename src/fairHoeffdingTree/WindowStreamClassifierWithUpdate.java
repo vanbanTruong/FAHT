@@ -32,8 +32,7 @@ public class WindowStreamClassifierWithUpdate {
 		// TODO Auto-generated method stub
 
 		// Import data
-		//String inputFileName = "adult.data.csv";
-		String inputFileName = "censusSmall.csv";
+		String inputFileName = "adult.data.csv";
 		CSVLoader loader = new CSVLoader();
 		loader.setSource(new File("./data/" + inputFileName));
 		loader.setNoHeaderRowPresent(false);
@@ -51,8 +50,6 @@ public class WindowStreamClassifierWithUpdate {
 		indexOfUndeprived = stream.attribute(saName).indexOfValue("Male");
 		indexOfDenied = stream.classAttribute().indexOfValue("<=50K"); // <=50K: 0, >50K: 1
 		indexOfGranted = stream.classAttribute().indexOfValue(">50K");
-		
-		//System.out.println(indexOfDeprived+","+indexOfUndeprived+","+indexOfDenied+","+indexOfGranted+",");
 		
 
 		String outputFileName = "fair-updated-"+inputFileName + "_" + windowSizeOfClassifer + ".csv";
