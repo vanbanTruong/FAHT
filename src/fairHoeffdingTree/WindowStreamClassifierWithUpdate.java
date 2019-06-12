@@ -5,7 +5,7 @@
  * 
  * ***The hoeffding tree here is the fair splitting criteria embedded based on weka.***
  */
-package fairHoeffdingTree;
+package FAHT;
 
 import java.io.BufferedWriter;
 import java.io.File;
