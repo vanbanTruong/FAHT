@@ -26,20 +26,12 @@ public class WindowStreamClassifier {
 	private static int indexOfUndeprived = -1; // sensitive attribute: male
 	private static int indexOfDenied = -1; // class label: income <=50k
 	private static int indexOfGranted = -1; // class label: income > 50k
-	
-	
-	//Store predicted and actual labels over the whole stream
-//	private static int []predictedClassLabelArr;
-//	private static int []trueClassLabelArr;
-//	private static int []saValueArr;
-//	private static int indexOfCurrentInst= 0;
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 
 		// Import data
-		//String inputFileName = "adult.data.csv";
-		String inputFileName = "censusSmall.csv";
+		String inputFileName = "adult.data.csv";
 		CSVLoader loader = new CSVLoader();
 		loader.setSource(new File("./data/" + inputFileName));
 		loader.setNoHeaderRowPresent(false);
@@ -58,14 +50,8 @@ public class WindowStreamClassifier {
 		indexOfDenied = stream.classAttribute().indexOfValue("<=50K"); // <=50K: 0, >50K: 1
 		indexOfGranted = stream.classAttribute().indexOfValue(">50K");
 		
-		//Store predicted and actual labels over the whole stream
-//		predictedClassLabelArr= new int[stream.numInstances()];
-//		trueClassLabelArr= new int[stream.numInstances()];
-//		saValueArr= new int[stream.numInstances()];
-		
 
 		String outputFileName = "fair-"+inputFileName + "_" + windowSizeOfClassifer + ".csv";
-		//String outputFileName = "fair-win-noUpdate-labels.csv";
 		BufferedWriter br = new BufferedWriter(new FileWriter(new File("./data/results/" + outputFileName)));
 		br.write("windowSize, accuracy, discrimination, fairaccuracy\n");
 
@@ -162,8 +148,6 @@ public class WindowStreamClassifier {
 		double overallFairaccuracy = 0;
 
 		double tempAcc = 0, tempDis = 0;
-		// accuracy[numOfCurrentWindow]: numOfCurrentWindow starts from 1 and ends at
-		// numOfCurrentWindow
 		for (int j = 1; j <= numOfCurrentWindow; j++) {
 			tempAcc += accuracy[j];
 			tempDis += discrimination[j];
