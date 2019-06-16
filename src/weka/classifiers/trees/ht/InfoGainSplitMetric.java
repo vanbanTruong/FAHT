@@ -130,15 +130,13 @@ public class InfoGainSplitMetric extends SplitMetric implements Serializable {
  	//discrimination loss
  	discriminationLoss= preDiscrimination- postDiscrimination;
  	
-// 	if (discriminationLoss== 0) {
-// 		return informationGain;
-//	} else {
-//		return informationGain*discriminationLoss;
-//	}
+ 	if (discriminationLoss== 0) {
+ 		return informationGain;
+	} else {
+		return informationGain*discriminationLoss;
+	}
  	
- 	return informationGain*discriminationLoss;
-    
- 	//return discriminationLoss;
+ 	//return informationGain*discriminationLoss;
   }
 
   @Override
