@@ -1,4 +1,4 @@
-#The tree structure of FAHT
+** The tree structure of FAHT **
 
 
 age <= 23.636: 
@@ -50,3 +50,106 @@ age > 23.636:
 |   |   |   |   relationship = Own-child: <=50K (303.000) NB32 NB adaptive32
 |   |   |   |   relationship = Unmarried: <=50K (1713.000) NB33 NB adaptive33
 |   |   |   |   relationship = Other-relative: <=50K (307.000) NB34 NB adaptive34
+
+
+# The tree structure of HT
+
+capital-gain <= 9090.818: 
+|   capital-gain <= 1397.818: 
+|   |   relationship = Not-in-family: 
+|   |   |   capital-loss <= 792.000: 
+|   |   |   |   education = Bachelors: <=50K (1206.000) NB1 NB adaptive1
+|   |   |   |   education = HS-grad: <=50K (2159.000) NB2 NB adaptive2
+|   |   |   |   education = 11th: <=50K (189.000) NB3 NB adaptive3
+|   |   |   |   education = Masters: <=50K (361.000) NB4 NB adaptive4
+|   |   |   |   education = 9th: <=50K (92.000) NB5 NB adaptive5
+|   |   |   |   education = Some-college: <=50K (1517.000) NB6 NB adaptive6
+|   |   |   |   education = Assoc-acdm: <=50K (265.000) NB7 NB adaptive7
+|   |   |   |   education = Assoc-voc: <=50K (280.000) NB8 NB adaptive8
+|   |   |   |   education = 7th-8th: <=50K (126.000) NB9 NB adaptive9
+|   |   |   |   education = Doctorate: <=50K (35.000) NB10 NB adaptive10
+|   |   |   |   education = Prof-school: <=50K (56.000) NB11 NB adaptive11
+|   |   |   |   education = 5th-6th: <=50K (58.000) NB12 NB adaptive12
+|   |   |   |   education = 10th: <=50K (181.000) NB13 NB adaptive13
+|   |   |   |   education = 1st-4th: <=50K (40.000) NB14 NB adaptive14
+|   |   |   |   education = Preschool: <=50K (28.000) NB15 NB adaptive15
+|   |   |   |   education = 12th: <=50K (75.000) NB16 NB adaptive16
+|   |   |   capital-loss > 792.000: <=50K (320.940) NB17 NB adaptive17
+|   |   relationship = Husband: 
+|   |   |   education = Bachelors: 
+|   |   |   |   capital-gain <= 106.636: 
+|   |   |   |   |   capital-loss <= 439.091: 
+|   |   |   |   |   |   hours-per-week <= 16.818: <=50K (45.500) NB18 NB adaptive18
+|   |   |   |   |   |   hours-per-week > 16.818: >50K (517.000) NB19 NB adaptive19
+|   |   |   |   |   capital-loss > 439.091: >50K (137.115) NB20 NB adaptive20
+|   |   |   |   capital-gain > 106.636: <=50K (247.500) NB21 NB adaptive21
+|   |   |   education = HS-grad: 
+|   |   |   |   capital-loss <= 709.909: 
+|   |   |   |   |   native-country = United-States: <=50K (1023.000) NB22 NB adaptive22
+|   |   |   |   |   native-country = Cuba: <=50K (6.000) NB23 NB adaptive23
+|   |   |   |   |   native-country = Jamaica: <=50K (3.000) NB24 NB adaptive24
+|   |   |   |   |   native-country = India: <=50K (2.000) NB25 NB adaptive25
+|   |   |   |   |   native-country = Mexico: <=50K (11.000) NB26 NB adaptive26
+|   |   |   |   |   native-country = South: <=50K (5.000) NB27 NB adaptive27
+|   |   |   |   |   native-country = Puerto-Rico: <=50K (5.000) NB28 NB adaptive28
+|   |   |   |   |   native-country = Honduras: <=50K (4.000) NB29 NB adaptive29
+|   |   |   |   |   native-country = England: <=50K (2.000) NB30 NB adaptive30
+|   |   |   |   |   native-country = Canada: <=50K (6.000) NB31 NB adaptive31
+|   |   |   |   |   native-country = Germany: <=50K (3.000) NB32 NB adaptive32
+|   |   |   |   |   native-country = Iran: <=50K (2.000) NB33 NB adaptive33
+|   |   |   |   |   native-country = Philippines: <=50K (5.000) NB34 NB adaptive34
+|   |   |   |   |   native-country = Italy: <=50K (6.000) NB35 NB adaptive35
+|   |   |   |   |   native-country = Poland: <=50K (5.000) NB36 NB adaptive36
+|   |   |   |   |   native-country = Columbia: <=50K (6.000) NB37 NB adaptive37
+|   |   |   |   |   native-country = Cambodia: <=50K (6.000) NB38 NB adaptive38
+|   |   |   |   |   native-country = Thailand: >50K (2.000) NB39 NB adaptive39
+|   |   |   |   |   native-country = China: <=50K (5.000)
+|   |   |   |   |   native-country = Guatemala: <=50K (2.000)
+|   |   |   |   |   native-country = El-Salvador: <=50K (5.000)
+|   |   |   |   |   native-country = Peru: <=50K (2.000)
+|   |   |   |   |   native-country = Haiti: <=50K (3.000)
+|   |   |   |   |   native-country = Ecuador: <=50K (2.000)
+|   |   |   |   |   native-country = Greece: <=50K (5.000)
+|   |   |   |   |   native-country = Dominican-Republic: <=50K (3.000)
+|   |   |   |   |   native-country = Vietnam: <=50K (3.000)
+|   |   |   |   |   native-country = Portugal: <=50K (3.000)
+|   |   |   |   |   native-country = Scotland: <=50K (2.000)
+|   |   |   |   |   native-country = Ireland: >50K (2.000)
+|   |   |   |   |   native-country = Hungary: <=50K (2.000)
+|   |   |   |   |   native-country = Trinadad&Tobago: <=50K (2.000)
+|   |   |   |   |   native-country = Japan: <=50K (2.000)
+|   |   |   |   capital-loss > 709.909: >50K (213.549) NB55 NB adaptive55
+|   |   |   education = 11th: <=50K (342.000) NB56 NB adaptive56
+|   |   |   education = Masters: >50K (684.000) NB57 NB adaptive57
+|   |   |   education = 9th: <=50K (219.000) NB58 NB adaptive58
+|   |   |   education = Some-college: 
+|   |   |   |   age <= 26.364: <=50K (204.000) NB59 NB adaptive59
+|   |   |   |   age > 26.364: <=50K (1387.000) NB60 NB adaptive60
+|   |   |   education = Assoc-acdm: <=50K (248.000) NB61 NB adaptive61
+|   |   |   education = Assoc-voc: <=50K (386.000) NB62 NB adaptive62
+|   |   |   education = 7th-8th: <=50K (353.000) NB63 NB adaptive63
+|   |   |   education = Doctorate: >50K (204.000) NB64 NB adaptive64
+|   |   |   education = Prof-school: >50K (275.000) NB65 NB adaptive65
+|   |   |   education = 5th-6th: <=50K (190.000) NB66 NB adaptive66
+|   |   |   education = 10th: <=50K (315.000) NB67 NB adaptive67
+|   |   |   education = 1st-4th: <=50K (88.000) NB68 NB adaptive68
+|   |   |   education = Preschool: <=50K (21.000) NB69 NB adaptive69
+|   |   |   education = 12th: <=50K (106.000) NB70 NB adaptive70
+|   |   relationship = Wife: 
+|   |   |   capital-gain <= 106.636: >50K (725.000) NB71 NB adaptive71
+|   |   |   capital-gain > 106.636: <=50K (288.000) NB72 NB adaptive72
+|   |   relationship = Own-child: 
+|   |   |   age <= 36.909: 
+|   |   |   |   age <= 25.636: <=50K (2416.455) NB73 NB adaptive73
+|   |   |   |   age > 25.636: <=50K (768.545) NB74 NB adaptive74
+|   |   |   age > 36.909: <=50K (453.650) NB75 NB adaptive75
+|   |   relationship = Unmarried: 
+|   |   |   capital-loss <= 792.000: 
+|   |   |   |   capital-loss <= 59.364: <=50K (886.000) NB76 NB adaptive76
+|   |   |   |   capital-loss > 59.364: <=50K (198.000) NB77 NB adaptive77
+|   |   |   capital-loss > 792.000: >50K (39.622) NB78 NB adaptive78
+|   |   relationship = Other-relative: <=50K (1331.000) NB79 NB adaptive79
+|   capital-gain > 1397.818: 
+|   |   capital-gain <= 5339.000: <=50K (1180.966) NB80 NB adaptive80
+|   |   capital-gain > 5339.000: >50K (845.632) NB81 NB adaptive81
+capital-gain > 9090.818: >50K (1372.446) NB82 NB adaptive82
