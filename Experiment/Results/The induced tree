@@ -52,7 +52,8 @@ age > 23.636:
 |   |   |   |   relationship = Other-relative: <=50K (307.000) NB34 NB adaptive34
 
 
-# The tree structure of HT
+
+**The tree structure of HT**
 
 capital-gain <= 9090.818: 
 |   capital-gain <= 1397.818: 
