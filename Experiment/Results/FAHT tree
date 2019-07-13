@@ -1,0 +1,52 @@
+The tree structure of FAHT
+
+
+age <= 23.636: 
+|   age <= 17.545: <=50K (514.366) NB1 NB adaptive1
+|   age > 17.545: 
+|   |   capital-gain <= 1365.818: 
+|   |   |   marital-status = Never-married: <=50K (2658.000) NB2 NB adaptive2
+|   |   |   marital-status = Married-civ-spouse: <=50K (200.000) NB3 NB adaptive3
+|   |   |   marital-status = Divorced: <=50K (38.000) NB4 NB adaptive4
+|   |   |   marital-status = Married-spouse-absent: <=50K (19.000) NB5 NB adaptive5
+|   |   |   marital-status = Separated: <=50K (24.000) NB6 NB adaptive6
+|   |   |   marital-status = Married-AF-spouse: <=50K (3.000) NB7 NB adaptive7
+|   |   |   marital-status = Widowed: <=50K (4.000) NB8 NB adaptive8
+|   |   capital-gain > 1365.818: <=50K (41.948) NB9 NB adaptive9
+age > 23.636: 
+|   age <= 29.182: 
+|   |   age <= 24.455: <=50K (928.312) NB10 NB adaptive10
+|   |   age > 24.455: 
+|   |   |   age <= 25.364: <=50K (481.160) NB11 NB adaptive11
+|   |   |   age > 25.364: <=50K (2117.840) NB12 NB adaptive12
+|   age > 29.182: 
+|   |   age <= 35.455: 
+|   |   |   age <= 30.455: <=50K (735.245) NB13 NB adaptive13
+|   |   |   age > 30.455: 
+|   |   |   |   relationship = Not-in-family: <=50K (738.000) NB14 NB adaptive14
+|   |   |   |   relationship = Husband: <=50K (836.000) NB15 NB adaptive15
+|   |   |   |   relationship = Wife: <=50K (91.000) NB16 NB adaptive16
+|   |   |   |   relationship = Own-child: <=50K (259.000) NB17 NB adaptive17
+|   |   |   |   relationship = Unmarried: <=50K (333.000) NB18 NB adaptive18
+|   |   |   |   relationship = Other-relative: <=50K (79.000) NB19 NB adaptive19
+|   |   age > 35.455: 
+|   |   |   age <= 40.909: 
+|   |   |   |   relationship = Not-in-family: <=50K (991.000) NB20 NB adaptive20
+|   |   |   |   relationship = Husband: <=50K (1265.000) NB21 NB adaptive21
+|   |   |   |   relationship = Wife: >50K (190.000) NB22 NB adaptive22
+|   |   |   |   relationship = Own-child: <=50K (267.000) NB23 NB adaptive23
+|   |   |   |   relationship = Unmarried: <=50K (647.000) NB24 NB adaptive24
+|   |   |   |   relationship = Other-relative: <=50K (86.000) NB25 NB adaptive25
+|   |   |   age > 40.909: 
+|   |   |   |   relationship = Not-in-family: 
+|   |   |   |   |   age <= 45.455: <=50K (604.077) NB26 NB adaptive26
+|   |   |   |   |   age > 45.455: <=50K (2168.923) NB27 NB adaptive27
+|   |   |   |   relationship = Husband: 
+|   |   |   |   |   age <= 45.455: >50K (1015.821) NB28 NB adaptive28
+|   |   |   |   |   age > 45.455: 
+|   |   |   |   |   |   age <= 50.000: >50K (665.762) NB29 NB adaptive29
+|   |   |   |   |   |   age > 50.000: <=50K (1622.680) NB30 NB adaptive30
+|   |   |   |   relationship = Wife: <=50K (399.000) NB31 NB adaptive31
+|   |   |   |   relationship = Own-child: <=50K (303.000) NB32 NB adaptive32
+|   |   |   |   relationship = Unmarried: <=50K (1713.000) NB33 NB adaptive33
+|   |   |   |   relationship = Other-relative: <=50K (307.000) NB34 NB adaptive34
