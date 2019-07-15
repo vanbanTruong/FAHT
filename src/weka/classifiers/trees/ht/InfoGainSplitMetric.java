@@ -119,24 +119,26 @@ public class InfoGainSplitMetric extends SplitMetric implements Serializable {
     double preDiscrimination= 0, postDiscrimination= 0, discriminationLoss= 0;
     
  	ConditionalSufficientStats sensitiveAttStats= node.get_m_nodeStats().get("sex");
- 	preDiscrimination= ((NominalConditionalSufficientStats)sensitiveAttStats).calNomlAttDiscrimination();
+ 	preDiscrimination= Math.abs(((NominalConditionalSufficientStats)sensitiveAttStats).calNomlAttDiscrimination());
  	
  	if (postDiscMerit== -1) { // null split: discrimination stays the same
  		postDiscrimination= preDiscrimination;
 	} else {
-		postDiscrimination= postDiscMerit;
+		postDiscrimination= Math.abs(postDiscMerit);
 	}
  	
  	//discrimination loss
  	discriminationLoss= preDiscrimination- postDiscrimination;
  	
- 	if (discriminationLoss== 0) {
- 		return informationGain;
-	} else {
-		return informationGain*discriminationLoss;
-	}
+// 	if (discriminationLoss== 0) {
+// 		return informationGain;
+//	} else {
+//		return informationGain*discriminationLoss;
+//	}
  	
- 	//return informationGain*discriminationLoss;
+ 	return informationGain*discriminationLoss;
+    
+ 	//return discriminationLoss;
   }
 
   @Override
