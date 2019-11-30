@@ -33,7 +33,7 @@ public class WindowStreamClassifier {
 		// TODO Auto-generated method stub
 		// Import data
 		String arffInputFileName= "adult.arff";
-		ArffReader arffReader= new ArffReader(new FileReader("./data/"+ arffInputFileName));
+		ArffReader arffReader= new ArffReader(new FileReader(arffInputFileName));
 		Instances stream = arffReader.getData();
 		stream.setClassIndex(stream.numAttributes() - 1);
 		System.out.println("load data successfully!");
