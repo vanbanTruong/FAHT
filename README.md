@@ -9,7 +9,7 @@ Implementation of FAHT (IJCAI 19), a fair classifier for online stream based dec
   * The FAHT folder contains the source code.
   
 ## Citation
-@inproceedings{zhang2019faht,
+@inproceedings{zhang2019faht,  
   title={FAHT: an adaptive fairness-aware decision tree classifier},
   author={Zhang, Wenbin and Ntoutsi, Eirini},
   booktitle={Proceedings of the 28th International Joint Conference on Artificial Intelligence},
