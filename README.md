@@ -10,10 +10,10 @@ Implementation of FAHT (IJCAI 19), a fair classifier for online stream based dec
   
 ## Citation
 @inproceedings{zhang2019faht,  
-  title={FAHT: an adaptive fairness-aware decision tree classifier},  
-  author={Zhang, Wenbin and Ntoutsi, Eirini},  
-  booktitle={Proceedings of the 28th International Joint Conference on Artificial Intelligence},  
-  pages={1480--1486},  
-  year={2019},  
-  organization={AAAI Press}  
+     title={FAHT: an adaptive fairness-aware decision tree classifier},  
+     author={Zhang, Wenbin and Ntoutsi, Eirini},  
+     booktitle={Proceedings of the 28th International Joint Conference on Artificial Intelligence},  
+     pages={1480--1486},  
+     year={2019},  
+     organization={AAAI Press}  
 }
