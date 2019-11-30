@@ -243,7 +243,7 @@ public class HoeffdingTree extends AbstractClassifier implements
    *         gui
    */
   public String globalInfo() {
-    return "A Hoeffding tree (VFDT) is an incremental, anytime decision tree induction algorithm"
+    return "FAHT is an incremental, fairness-aware decision tree induction algorithm"
         + " that is capable of learning from massive data streams, assuming that the"
         + " distribution generating examples does not change over time. Hoeffding trees"
         + " exploit the fact that a small sample can often be enough to choose an optimal"
@@ -271,13 +271,13 @@ public class HoeffdingTree extends AbstractClassifier implements
 
     result = new TechnicalInformation(Type.INPROCEEDINGS);
     result.setValue(Field.AUTHOR,
-        "Geoff Hulten and Laurie Spencer and Pedro Domingos");
-    result.setValue(Field.TITLE, "Mining time-changing data streams");
+        "Wenbin Zhang and Eirini Ntoutsi");
+    result.setValue(Field.TITLE, "FAHT: an adaptive fairness-aware decision tree classifier");
     result.setValue(Field.BOOKTITLE,
-        "ACM SIGKDD Intl. Conf. on Knowledge Discovery and Data Mining");
-    result.setValue(Field.YEAR, "2001");
-    result.setValue(Field.PAGES, "97-106");
-    result.setValue(Field.PUBLISHER, "ACM Press");
+        "International Joint Conference on Artificial Intelligence");
+    result.setValue(Field.YEAR, "2019");
+    result.setValue(Field.PAGES, "1480--1486");
+    result.setValue(Field.PUBLISHER, "AAAI Press");
 
     return result;
   }
