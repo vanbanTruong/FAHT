@@ -63,8 +63,8 @@ import weka.core.WeightedInstancesHandler;
 
 /**
  <!-- globalinfo-start --> 
- * A Hoeffding tree (VFDT) is an incremental, anytime
- * decision tree induction algorithm that is capable of learning from massive
+ * FAHT is built on top of the Hoeffding tree (HT).
+ * HT is an incremental, anytime decision tree induction algorithm that is capable of learning from massive
  * data streams, assuming that the distribution generating examples does not
  * change over time. Hoeffding trees exploit the fact that a small sample can
  * often be enough to choose an optimal splitting attribute. This idea is
